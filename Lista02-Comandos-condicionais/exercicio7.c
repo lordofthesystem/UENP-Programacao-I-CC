@@ -12,7 +12,11 @@ int main() {
     scanf("%d", &c);
 
     // Lógica com até 4 ifs para ordenar
-    if (a > b) { temp = a; a = b; b = temp; }
+    if (a > b) { 
+        temp = a; 
+        a = b; 
+        b = temp; 
+    }
     if (a > c) { temp = a; a = c; c = temp; }
     if (b > c) { temp = b; b = c; c = temp; }
 
