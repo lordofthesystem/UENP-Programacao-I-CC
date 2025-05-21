@@ -10,10 +10,8 @@ void imprimirDecrescente(int n) {
 
 int main() {
     int numero;
-
     printf("Digite um número: ");
     scanf("%d", &numero);
-
     imprimirDecrescente(numero);
 
     return 0;
