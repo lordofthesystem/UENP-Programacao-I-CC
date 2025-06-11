@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-void preencherVetor(int vetor[]) {
-    int tamanho = sizeof(vetor) / sizeof(vetor[0]);
+void preencherVetor(int vetor[], int tamanho) {
     for (int i = 0; i < tamanho; i++) {
         printf("Digite o valor para o elemento %d: ", i);
         scanf("%d", &vetor[i]);
