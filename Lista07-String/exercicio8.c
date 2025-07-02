@@ -5,7 +5,8 @@
 void conta_m_m(char frase[]) {
     int contMa=0, contMi=0, contDi=0;
     for(int i=0;frase[i]!='\0';i++){
-        contDi++;
+        if(frase[i]!='\n')
+            contDi++;
         if(frase[i]>='a' && frase[i]<='z'){
             contMi++;
         }
