@@ -43,7 +43,7 @@ int main(){
         if(achou == 0){
             erros++;
         }
-        printf(" %s",palavra_jogador);
+        printf("%s",palavra_jogador);
     }
 
 }
