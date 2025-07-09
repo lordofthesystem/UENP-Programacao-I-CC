@@ -30,7 +30,7 @@ int main() {
         scanf("%s", palavra_jogador);
 
         letras_corretas = 0;
-        for (int i = 0; i < palavra_jogador; i++) {
+        for (int i = 0; i < tamanho_palavra; i++) {
             if (palavra_jogador[i] == palavra_secreta[i]) {
                 letras_corretas++;
             }
