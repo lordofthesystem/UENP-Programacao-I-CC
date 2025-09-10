@@ -71,6 +71,22 @@ void maisRapido(struct dc Personagens[], int qt){
   printf("\n");
 }
 
+void maisInteligente(struct dc Personagens[], int qt){
+  int inteligencia=0;
+  int maior_i;
+  for(int i=0; i<qt; i++){
+    if(Personagens[i].inteligencia>inteligencia){
+      inteligencia=Personagens[i].inteligencia;
+      maior_i=i;
+    }
+  }
+  printf("Nome: %s", Personagens[maior_i].nome);
+  printf("Força: %d", Personagens[maior_i].forca);
+  printf("Velocidade: %d", Personagens[maior_i].velocidade);
+  printf("Inteligência: %d", Personagens[maior_i].inteligencia);
+  printf("\n");
+}
+
 
 
 int main() {
@@ -103,6 +119,14 @@ int main() {
                 ///
                 maisForte(Personagens, qt);
                 break;
+            case 4:
+                ///
+                maisRapido(Personagens, qt);
+                break;  
+            case 5:
+                ///
+                maisInteligente(Personagens, qt);
+                break;               
             default:
                 printf("Opção inválida");
                 break;
