@@ -36,6 +36,22 @@ void listar(struct dc Personagens[], int qt){
   }
 }
 
+void maisForte(struct dc Personagens[], int qt){
+  int forca=0;
+  struct dc aux;
+  for(int i=0; i<qt; i++){
+    if(Personagens[i].forca>forca){
+      forca=Personagens[i].forca;
+      aux=Personagens[i];
+    }
+  }
+  printf("Nome: %s", aux.nome);
+  printf("Força: %d", aux.forca);
+  printf("Velocidade: %d", aux.velocidade);
+  printf("Inteligência: %d", aux.inteligencia);
+  printf("\n");
+}
+
 
 int main() {
     struct dc *Personagens = NULL;
@@ -64,7 +80,8 @@ int main() {
                 listar(Personagens, qt);
                 break;
             case 3:
-                ///Sair
+                ///
+                maisForte(Personagens, qt);
                 break;
             default:
                 printf("Opção inválida");
