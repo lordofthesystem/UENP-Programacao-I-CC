@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
+
 
 struct dc{
     char nome[150];
@@ -51,6 +53,24 @@ void maisForte(struct dc Personagens[], int qt){
   printf("Inteligência: %d", aux.inteligencia);
   printf("\n");
 }
+
+
+void maisRapido(struct dc Personagens[], int qt){
+  int velocidade=0;
+  int maior_i;
+  for(int i=0; i<qt; i++){
+    if(Personagens[i].velocidade>velocidade){
+      velocidade=Personagens[i].velocidade;
+      maior_i=i;
+    }
+  }
+  printf("Nome: %s", Personagens[maior_i].nome);
+  printf("Força: %d", Personagens[maior_i].forca);
+  printf("Velocidade: %d", Personagens[maior_i].velocidade);
+  printf("Inteligência: %d", Personagens[maior_i].inteligencia);
+  printf("\n");
+}
+
 
 
 int main() {
