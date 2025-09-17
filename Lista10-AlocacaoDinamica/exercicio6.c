@@ -42,9 +42,9 @@ int main() {
         }
         printf("\n");
     }
-    printf("Lugares vazios %d: \n", contador0);
-    printf("Lugares carros %d: \n", contador1);
-    printf("Lugares caminhonete. %d: \n", contador2 ); 
+    printf("Lugares vazios: %d \n", contador0);
+    printf("Lugares carros: %d \n", contador1);
+    printf("Lugares caminhonete: %d \n", contador2 ); 
 
 
 }
